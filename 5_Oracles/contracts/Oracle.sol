@@ -10,8 +10,8 @@ contract Oracle{
     mapping(bytes32 => Data) public data;
     address admin;
 
-    constructor()  {
-        admin = msg.sender;
+    constructor(address _admin)  {
+        admin = _admin;
     }
 
     function updateReporter(address reporter,bool isReporter) external{

@@ -2,7 +2,7 @@ pragma solidity ^0.7.1;
 
 import './IOracles.sol';
 
-contract Comsumer{
+contract Consumer{
     IOracle public oracle;
 
     constructor(address oracleAddr) {
